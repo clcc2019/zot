@@ -32,6 +32,7 @@ type RegistryConfig struct {
 	MaxRetries       *int
 	RetryDelay       *time.Duration
 	OnlySigned       *bool
+	OnlySystemImages *bool
 	CredentialHelper string
 }
 
