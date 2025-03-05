@@ -129,7 +129,7 @@ func getCopyOptions(upstreamCtx, localCtx *types.SystemContext) copy.Options {
 		SourceCtx:             upstreamCtx,
 		ReportWriter:          io.Discard,
 		ForceManifestMIMEType: ispec.MediaTypeImageManifest, // force only oci manifest MIME type
-		ImageListSelection:    copy.CopySystemImage,
+		ImageListSelection:    copy.CopySystemImage, // only copy system images
 	}
 
 	return options
